@@ -6,30 +6,43 @@
     <title>Flexible Box</title>
     <style>
       div.container {
-        background-color: rgb(175, 99, 152);
+        background-color: rgb(184, 43, 78);
 
         display: flex;
         flex-flow: row nowrap;
         flex-basis: 200px;
       }
       div.item {
-        background-color: rgb(44, 189, 44);
+        background-color: rgb(118, 95, 224);
         border: 1px solid black;
         text-align: center;
-        flex-basis: 200px;
       }
+      /* Use de preferencia flex , somente flex e adicionar o restante 
+      ( flex = flex-grow, flex-shrink, flex-basis)
+       resultado
+       flex: 0 1 auto 
+       ou 
+       flex: initial
+       flex: 0 0 auto
+       flex: none*/
       div#cxA {
-        flex-shrink: 1;
+        /*flex-shrink: 1;
         flex-grow: 0;
+        flex-basis: 200px;*/
+
+        flex: 1 0 200px;
       }
       div#cxB {
-        flex-shrink: 1;
+        /* flex-shrink: 1;
         flex-grow: 2;
+        flex-basis: 150px;*/
+        flex: 1 2 150px;
       }
       div#cxC {
-        flex-basis: 150;
-        flex-shrink: 1;
-        flex-grow: 4;
+        /*flex-shrink: 8;
+        flex-grow: 1;
+        flex-basis: 200px;*/
+        flex: 8 1 auto;
       }
     </style>
   </head>
