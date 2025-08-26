@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Layout na Prática</title>
+    <!--metodo para agilizar a criação das div ou outros
+    (div.container + enter) (div.item*7 + enter)-->
     <style>
       * {
         margin: 0;
@@ -16,7 +18,12 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
-        gap: 5px;
+        gap: 10px;
+
+        align-items: normal;
+        justify-items: normal;
+        align-content: normal;
+        justify-content: normal;
       }
       div.item {
         border: 3px solid royalblue;
