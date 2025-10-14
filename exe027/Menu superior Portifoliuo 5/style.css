@@ -27,19 +27,21 @@ body {
   color: var(--texto);
 }
 header {
-  background-color: var(--destaque);
-  color: var(--texto);
-  padding: 15px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav#menu ul {
   list-style: none;
   display: flex;
-
-  gap: 10px;
+  gap: 15px;
 }
 
 nav#menu a {
